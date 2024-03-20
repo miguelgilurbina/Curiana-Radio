@@ -5,22 +5,18 @@ const Header = () => {
 
   const headerStyles = {
     textAlign : 'center',
-    backgroundColor : 'blue',
-    height: '60px'
-  }
-
-  const titleStyles = {
-    color: '#fff',
+    height: '0px',
+    fontSize: '80px',
   
-
   }
+
 
  
   return (
     <>
       
       <div style={headerStyles}>
-        <h1 style={titleStyles}>Curiana Radio</h1>
+        <h1>CURIANA RADIO</h1>
       </div>
       
     </>

@@ -2,14 +2,27 @@ import React from 'react'
 
 
 const Header = () => {
+
+  const headerStyles = {
+    textAlign : 'center',
+    backgroundColor : 'blue',
+    height: '60px'
+  }
+
+  const titleStyles = {
+    color: '#fff',
+  
+
+  }
+
+ 
   return (
     <>
-      <nav >
-         <li><a href="">Home</a></li>
-         <li><a href="">Galería</a></li>
-         <li><a href="">Contacto</a></li>
-      </nav>
-     
+      
+      <div style={headerStyles}>
+        <h1 style={titleStyles}>Curiana Radio</h1>
+      </div>
+      
     </>
   )
 }

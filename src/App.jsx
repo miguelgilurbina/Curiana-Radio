@@ -6,8 +6,9 @@ function App() {
 
   return (
     <>
-      <Header/>
+    
       <Navbar/>
+      <Header/>
       <Footer/>
     </>
   )

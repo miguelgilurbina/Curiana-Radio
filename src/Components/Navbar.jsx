@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Navbar = () => {
 
@@ -9,9 +9,9 @@ const Navbar = () => {
   }
 
   const linkStyles = {
-    paddingTop: '25rem',
-    paddingRight: '10rem',
-    paddingLeft: '10rem'
+    paddingTop: '0rem',
+    paddingRight: '1rem',
+    paddingLeft: '1rem'
     
   }
 

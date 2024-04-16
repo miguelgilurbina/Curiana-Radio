@@ -3,23 +3,39 @@
 const Navbar = () => {
 
   const navbarStyles = {
-    display: 'flex',
     alignText: 'center',
+    backgroundColor: '#215BA6',
+    height: '60px',
+    display: 'flex',
+    fontSize: '14'
+  }
+
+  const listStyles = {
+    justifyContent: 'flex-end',
+    paddingLeft: '5px',
+    display: 'flex',
+    margin: '0px 160px 0px 160px',
     
   }
 
   const linkStyles = {
-    paddingTop: '0rem',
-    paddingRight: '1rem',
-    paddingLeft: '1rem'
-    
+    paddingLeft: '38px',
+
+  }
+
+  const logoStyles = {
+    paddingRight: '1300px'
   }
 
   return (
     <nav style={navbarStyles}>
-         <h2 style={linkStyles}>Home</h2>
-         <h2 style={linkStyles}>Proyectos</h2>
-         <h2 style={linkStyles}>Galería</h2>
+      <ul style={listStyles}>
+          <h2 style={logoStyles}>Curiana Radio</h2>
+          <h2 style={linkStyles} >Inicio</h2>
+          <h2 style={linkStyles}>Proyectos</h2>
+          <h2 style={linkStyles}>Galería</h2>
+          <h2 style={linkStyles}>About</h2>
+      </ul>
     </nav>
   )
 }

@@ -1,11 +1,11 @@
-
+import Fondo from '../assets/Fondo Web Curiana 1.jpg'
 const Header = () => {
 
   const headerStyles = {
-    
+    backgroundColor: '#105bbd',
     margin: '0px 0px 0px 0px',
     height: '700px',
-    backgroundImage: 'url("../src/assets/Fondo Web Curiana 1.jpg")'
+    backgroundImage: `url(${Fondo})`
   }
 
   const titleStyles = {

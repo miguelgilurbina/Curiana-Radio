@@ -4,37 +4,43 @@ const Navbar = () => {
 
   const navbarStyles = {
     alignText: 'center',
-    backgroundColor: '#215BA6',
-    height: '60px',
-    display: 'flex',
-    fontSize: '14'
+    backgroundColor: '#105bbd',
+    height: '30px',
+    position: 'sticky',
+   
   }
 
   const listStyles = {
-    justifyContent: 'flex-end',
-    paddingLeft: '5px',
+    justifyContent: 'space-around',
     display: 'flex',
-    margin: '0px 160px 0px 160px',
+    margin: '0px 0px 0px 0px',
+    fontSize: '8px'
     
   }
 
   const linkStyles = {
-    paddingLeft: '38px',
-
+    display:  'flex',
   }
 
   const logoStyles = {
-    paddingRight: '1300px'
+    paddingRight: '100px'
+  }
+
+  const detailStyles = {
+    paddingRight: '40px'
+
   }
 
   return (
     <nav style={navbarStyles}>
       <ul style={listStyles}>
-          <h2 style={logoStyles}>Curiana Radio</h2>
-          <h2 style={linkStyles} >Inicio</h2>
-          <h2 style={linkStyles}>Proyectos</h2>
-          <h2 style={linkStyles}>Galería</h2>
-          <h2 style={linkStyles}>About</h2>
+          <h2 style={logoStyles}>CURIANA RADIO</h2>
+        <ul style={linkStyles}>
+          <h2 style={detailStyles}>HOME</h2>
+          <h2 style={detailStyles}>PROYECTOS</h2>
+          <h2 style={detailStyles}>GALERIA</h2>
+          <h2 style={detailStyles}>ABOUT</h2>
+        </ul>
       </ul>
     </nav>
   )

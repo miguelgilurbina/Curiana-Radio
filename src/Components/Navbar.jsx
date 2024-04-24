@@ -6,7 +6,7 @@ const Navbar = () => {
     alignText: 'center',
     backgroundColor: '#105bbd',
     height: '30px',
-    position: 'sticky',
+    position:'sticky'
    
   }
 

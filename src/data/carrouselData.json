@@ -1,15 +1,15 @@
 {
     "slides": [
         {
-            "src": "",
+            "src": "src/assets/Mapa La Curiana.jpg",
             "alt": "Imagen de Mapa antiguo de la Curiana"
         },
         {
-            "src": "",
+            "src": "src/assets/el puente amarillo.jpg",
             "alt": "Imagen de Mapa antiguo de la Curiana"
         },
         {
-            "src": "",
+            "src": "src/assets/Curiana Radio Abstract.jpg",
             "alt": "Imagen de Mapa antiguo de la Curiana"
         }
     ]

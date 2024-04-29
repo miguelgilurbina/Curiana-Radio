@@ -1,34 +1,33 @@
 import PropTypes from 'prop-types'
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs'
-
+import { useState } from 'react'
+import '../Styles/Carousel.css'
 const Carousel = ( {data} )  => {
 
-  const carouselStyles = {
-    color: '#105bbd' ,
-    backgroundColor: '#f2e875',
-    height:'900px',
-    width:'100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems : 'center'
 
+  const [slide, setSlide] = useState(0);
+  
+  const nextSlide = () => {
+    setSlide(slide+1);
   }
 
-  const slideStyles = {
-    borderRadius: '0.5rem',
-    boxShadow: '0px 0px 7 px #666',
-    width: '400px',
-    height: '400px' 
+  const prevSlide = () => {
+    setSlide(slide-1);
   }
-
 
   return (
-    <div style={carouselStyles}>
-      <BsArrowLeftCircleFill/>
+    <div className= 'carousel'>
+      <BsArrowLeftCircleFill className = 'arrow arrow-left' onClick={prevSlide}/>
       {data.slides.map((item, idx) => {
-        return <img src={item.src} alt={item.alt} key={idx} style= {slideStyles}/>
+        return <img src={item.src} alt={item.alt} key={idx} className={slide === idx ? 'slide' : 'slide slide-hidden'}/>
       })}
-      <BsArrowRightCircleFill/>
+      <BsArrowRightCircleFill className = 'arrow arrow-right' onClick={nextSlide}/>
+      <span className='indicators'>
+        {data.slides.map((_ ,idx)=> {
+      return <button key={idx} onClick={null} className={slide === idx ? 'indicator': 'indicator indicator-inactive'}>
+
+      </button> })}
+      </span>
     </div>
   )
 }

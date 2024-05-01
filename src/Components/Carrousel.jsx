@@ -5,14 +5,18 @@ import '../Styles/Carousel.css'
 const Carousel = ( {data} )  => {
 
 
+
+
   const [slide, setSlide] = useState(0);
+
+console.log(slide)
   
   const nextSlide = () => {
-    setSlide(slide+1);
+    setSlide(slide === data.slides.length -1 ? 0 : slide+1);
   }
 
   const prevSlide = () => {
-    setSlide(slide-1);
+    setSlide(slide === 0 ? data.slides.length - 1  : slide-1);
   }
 
   return (
@@ -28,7 +32,10 @@ const Carousel = ( {data} )  => {
 
       </button> })}
       </span>
+      
     </div>
+
+    
   )
 }
 
